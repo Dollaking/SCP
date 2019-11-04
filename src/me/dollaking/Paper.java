@@ -21,4 +21,16 @@ public class Paper extends Turn{
 		return "Win";
 	}
 
+	@Override
+	public String match(Turn t) {
+		if (t.getDesc().equals("Scissors")){
+			return "Lose";
+		} else if (t.getDesc().equals("Paper")){
+			return "Draw";
+		} else if (t.getDesc().equals("Rock")){
+			return "Win";
+		}
+		return "Turn not valid!";
+	}
+
 }

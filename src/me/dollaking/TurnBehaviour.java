@@ -2,6 +2,6 @@ package me.dollaking;
 
 public abstract class TurnBehaviour {
 	
-	public abstract void perform();
+	public abstract Turn perform();
 
 }

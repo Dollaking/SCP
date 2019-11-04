@@ -4,8 +4,7 @@ public class Player{
 	private Turn turn;
 	private String status;
 	
-	public Player(Scissors s){
-		this.turn = s;
+	public Player(){
 	}
 	
 	public Turn getTurn() {

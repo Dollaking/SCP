@@ -3,8 +3,8 @@ package me.dollaking;
 public class RandomBehaviour extends TurnBehaviour{
 
 	@Override
-	public void perform() {
-		// TODO Auto-generated method stub
+	public Turn perform() {
+		return new Scissors();
 		
 	}
 

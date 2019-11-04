@@ -20,4 +20,16 @@ public class Scissors extends Turn{
 	public String match(Rock r) {
 		return "Lose";
 	}
+	
+	@Override
+	public String match(Turn t) {
+		if (t.getDesc().equals("Scissors")){
+			return "Draw";
+		} else if (t.getDesc().equals("Paper")){
+			return "Win";
+		} else if (t.getDesc().equals("Rock")){
+			return "Lose";
+		}
+		return "Turn not valid!";
+	}
 }

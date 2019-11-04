@@ -16,7 +16,7 @@ public abstract class Turn {
 	}
 	
 	
-	
+	public abstract String match(Turn t);
 	/**
 	 * Cant Figure How to use polymorphism for this :(
 	 * @param s

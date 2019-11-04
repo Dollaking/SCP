@@ -21,5 +21,18 @@ public class Rock extends Turn{
 		// TODO Auto-generated method stub
 		return "Draw";
 	}
+	
+	@Override
+	public String match(Turn t) {
+		if (t.getDesc().equals("Scissors")){
+			return "Win";
+		} else if (t.getDesc().equals("Paper")){
+			return "Lose";
+		} else if (t.getDesc().equals("Rock")){
+			return "Draw";
+		}
+		return "Turn not valid!";
+	}
+
 
 }

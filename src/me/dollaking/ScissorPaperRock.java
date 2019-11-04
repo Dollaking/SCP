@@ -8,6 +8,7 @@ public class ScissorPaperRock {
 	public ScissorPaperRock(Human h, AI ai){
 		this.player1 = h;
 		this.player2 = ai;
+		play();
 	}
 	
 	
@@ -23,11 +24,9 @@ public class ScissorPaperRock {
 		
 	}
 	
-	public String play(Player p1, Player p2){
-		p1.getTurn().match(p1);
-		p
-		return status;
-		
+	public String play(){
+		status = player1.getTurn().match(player2.getTurn());
+		return status;		
 	}
 
 }
